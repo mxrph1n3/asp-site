@@ -1,14 +1,146 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/asp-site/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>asp-site</title>
-    <script type="module" crossorigin src="/asp-site/assets/index-BL8FIMca.js"></script>
-    <link rel="stylesheet" crossorigin href="/asp-site/assets/index-DQ3P1g1z.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ASP Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">ASP<span>Studio</span></div>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn-outline">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Разработка сайтов под ключ</h1>
+          <p>Создаём современные, быстрые и продающие веб‑проекты для бизнеса любого масштаба.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+            <a href="#services" class="btn btn-ghost">Посмотреть услуги</a>
+          </div>
+          <div class="hero-tags">
+            <span>Landing page</span>
+            <span>Многостраничники</span>
+            <span>Интернет‑магазины</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-badge">Free консультация</div>
+          <h2>Запуск за 7–14 дней</h2>
+          <p>Анализируем нишу, продумываем структуру, собираем дизайн и запускаем сайт без лишней бюрократии.</p>
+          <ul>
+            <li>Адаптив под мобильные</li>
+            <li>Подготовка к SEO</li>
+            <li>Подключение аналитики</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Что мы делаем</h2>
+        <p class="section-subtitle">Полный цикл — от идеи до первых заявок с сайта.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Landing page</h3>
+            <p>Одностраничный сайт для быстрых продаж и теста гипотез.</p>
+            <ul>
+              <li>Структура под оффер</li>
+              <li>Акцент на конверсию</li>
+              <li>Подключение форм и мессенджеров</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Корпоративные сайты</h3>
+            <p>Многостраничные решения для компаний и личных брендов.</p>
+            <ul>
+              <li>Каталог услуг</li>
+              <li>Блог / новости</li>
+              <li>Интеграция с CRM</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Интернет‑магазины</h3>
+            <p>Понятный каталог, удобная корзина и простое оформление заказа.</p>
+            <ul>
+              <li>Фильтры и поиск</li>
+              <li>Онлайн‑оплата</li>
+              <li>Уведомления клиентам</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Недавние проекты</h2>
+        <p class="section-subtitle">Каждый проект — с упором на цели клиента.</p>
+        <div class="grid-3">
+          <div class="card card-glass">
+            <h3>Сайт для онлайн‑школы</h3>
+            <p>Увеличили количество заявок с рекламы на 38% за счёт новой структуры и дизайна.</p>
+          </div>
+          <div class="card card-glass">
+            <h3>Лендинг для студии</h3>
+            <p>Собрали одностраничник за 10 дней, настроили аналитику и связку с CRM.</p>
+          </div>
+          <div class="card card-glass">
+            <h3>Магазин мерча</h3>
+            <p>Запустили магазин на готовой CMS, подключили онлайн‑оплату и доставку.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Расскажите о проекте</h2>
+          <p class="section-subtitle">Заполните форму, и мы свяжемся с вами, предложим варианты и примерный бюджет.</p>
+          <ul class="contact-list">
+            <li>Ответ в течение рабочего дня</li>
+            <li>Можно обсудить в Telegram или по почте</li>
+            <li>Без навязчивых звонков</li>
+          </ul>
+        </div>
+        <form class="form">
+          <div class="form-row">
+            <label>Имя</label>
+            <input type="text" placeholder="Как к вам обращаться">
+          </div>
+          <div class="form-row">
+            <label>Контакт</label>
+            <input type="text" placeholder="Telegram, WhatsApp или email">
+          </div>
+          <div class="form-row">
+            <label>О проекте</label>
+            <textarea rows="4" placeholder="Кратко опишите задачу, нишу и сроки"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 ASP Studio</span>
+      <span>Разработка сайтов и поддержка</span>
+    </div>
+  </footer>
+</body>
 </html>
